@@ -7,10 +7,13 @@ body{
 
 }
 
-p{
-    text-align: justify;
+p {
+    text-align: center;
     font-size: 20px;
+    width: 50%; /* Ajusta el ancho según lo necesites */
+    margin: 0 auto;
 }
+
 
 h1{
     font-size: 40px;
