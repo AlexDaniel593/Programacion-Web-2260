@@ -1,0 +1,32 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+h1 {
+    color: green;
+}
+
+h2{
+    color: olive
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;  
+    text-align: center;
+}
+
+footer{
+    background-color: #06bba0;
+}
+
+dl{
+    text-align: left;
+}
+
+#profile_img{
+    border-radius: 50%;
+}
