@@ -34,3 +34,23 @@ dl{
 .spanuso{
     color: blue;
 }
+
+.boton{
+    background-color: #06bba0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #0000005b;
+}
+
+#btnBuscar{
+    background-color: #06bba0;
+    color: white;
+    padding: 3px 6px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #0000005b;
+}
