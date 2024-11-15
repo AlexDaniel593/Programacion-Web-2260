@@ -1,0 +1,71 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: green;
+}
+
+h2{
+    color: olive
+}
+
+dl{
+    text-align: left;
+}
+
+nav{
+    background-color: #06bba0;
+    padding: 5px;
+}
+
+aside{
+    width: 15%;
+    padding: 5px;
+    float: right;
+}
+
+
+footer{
+    background-color: #06bba0;
+}
+
+
+
+#logo{
+    border-radius: 50%;
+    width: 80px;
+}
+
+#btnBuscar{
+    background-color: #06bba0;
+    color: white;
+    padding: 3px 6px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #0000005b;
+}
+.container{
+    width: 60%;
+    margin: 0 auto;  
+    text-align: center;
+}
+
+.spanuso {
+    color: #008000;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.boton{
+    background-color: #06bba0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #0000005b;
+}
+
