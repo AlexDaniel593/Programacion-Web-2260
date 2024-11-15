@@ -16,25 +16,54 @@
             </figure>
             <h1>AgroFrut</h1>
             <nav>
-                <a href="index.html">Inicio</a>
-                <a href="productos.html">Productos</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="about.html">Sobre Nosotros</a>
+                <a href="./index.html">Inicio</a>
+                <a href="./productos.html">Productos</a>
+                <a href="./contacto.html">Contacto</a>
+                <a href="./login.html">Iniciar Sesion</a>
             </nav>
         </header>
 
 
         <br><input type="text" id="buscar" name="buscar" placeholder="Buscar">
         <button id="btnBuscar">Buscar</button>
+
+        <!-- <form action="/submit" method="post">
+            <label>Nombre: </label>
+            <input type="text" id="nombre" name="nombre" placeholder="nombre" required><br>
+            <label>Correo: </label>
+            <input type="email" id="email" name="email" placeholder="correo"><br>
+            <label>Contrasena: </label>
+            <input type="password" id="password" name="password" placeholder="contrasena"><br>
+            <laber>Tipo Persona:</laber>
+            <select name="tipo" id="tipo">
+                <option value="estudiante">Estudiante</option>
+                <option value="Docente">Docente</option>
+                <option value="Administrativo">Administrativo</option>
+            </select><br>
+            <button class="btnSubmit" type="submit">Enviar</button>
+        </form> -->
+
+
     </div>
 
-    <aside>
-        <h2>Ubicación</h2>
-        <p>Estamos ubicados en la ciudad de Quito</p>
-        <a href="https://www.google.com/maps/place/UNIVERSITY+OF+THE+ARMED+FORCES+ESPE/@-0.3329667,-78.4321342,14926m/data=!3m1!1e3!4m6!3m5!1s0x91d5bd12538eb13b:0x907c61f1abbe45ab!8m2!3d-0.314821!4d-78.4425193!16s%2Fg%2F11bc5w_2vf?entry=ttu&g_ep=EgoyMDI0MTExMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-            <button class="boton">¿Cómo llegar?</button>
-        </a>
-    </aside>
+    <div class="information">
+        <aside>
+            <h2>Ubicación</h2>
+            <p>Estamos ubicados en la ciudad de Quito</p>
+            <a href="https://www.google.com/maps/place/UNIVERSITY+OF+THE+ARMED+FORCES+ESPE/@-0.3329667,-78.4321342,14926m/data=!3m1!1e3!4m6!3m5!1s0x91d5bd12538eb13b:0x907c61f1abbe45ab!8m2!3d-0.314821!4d-78.4425193!16s%2Fg%2F11bc5w_2vf?entry=ttu&g_ep=EgoyMDI0MTExMi4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank">
+                <button class="boton">¿Cómo llegar?</button>
+            </a>
+        </aside>
+
+        <aside>
+            <h2>Horario de Atención</h2>
+            <p>Lunes a Viernes: 8:00 - 18:00</p>
+            <p>Sábados: 9:00 - 13:00</p>
+        </aside>
+    </div>
+
+
 
     <div class="container">
 
@@ -54,7 +83,11 @@
             <dl>
                 <dt>
                     <strong>Manzano</strong> </p>
-                    <img src="./img/productos/manzano.jpeg" alt="Manzano" width="150px">
+                    <figure>
+                        <img src="./img/productos/manzano.jpeg" alt="Manzano" width="150px">
+                        <figcaption>Manzano</figcaption>
+                    </figure>
+                    
 
                     <p>El manzano es un árbol frutal que produce manzanas, una fruta muy apreciada por su sabor y valor
                         nutricional. Es ideal para climas templados y requiere cuidados específicos para su óptimo
@@ -63,7 +96,11 @@
                 </dt>
                 <dt>
                     <strong>Peral</strong></p>
-                    <img src="./img/productos/peral.jpeg" alt="Peral" width="150px">
+                    <figure>
+                        <img src="./img/productos/peral.jpeg" alt="Peral" width="150px">
+                        <figcaption>Peral</figcaption>
+                    </figure>
+                   
 
                     <p>El peral es un árbol frutal que produce peras, una fruta jugosa y dulce que es muy popular en
                         muchas culturas. Es adecuado para climas templados y requiere un cuidado adecuado para producir
@@ -72,8 +109,10 @@
                 </dt>
                 <dt>
                     <strong>Cítricos</strong></p>
+                    <figure>
                     <img src="./img/productos/citricos.jpeg" alt="Cítricos" width="150px">
-
+                    <figcaption>Cítricos</figcaption>
+                </figure>
                     <p>Los cítricos son un grupo de árboles frutales que incluyen naranjas, limones, limas y mandarinas.
                         Son conocidos por su sabor ácido y su alto contenido de vitamina C. Son ideales para climas
                         cálidos y requieren un riego regular para un buen desarrollo.</p>
@@ -114,12 +153,14 @@
         </section>
 
 
-        <footer>
-            <p>Agro-Frut &copy; 2024</p>
-        </footer>
 
     </div>
 
+    <div class="footer">
+        <p>Agro-Frut &copy; 2024</p>
+        <p>Juntos desde el 2021 </p>
+        <p>Te espereamos <3 </p>
+    </div>
 </body>
 
 </html>

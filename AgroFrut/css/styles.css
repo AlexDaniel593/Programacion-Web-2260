@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-h1 {
+h1 { /*elemento*/
     color: green;
 }
 
@@ -21,9 +21,7 @@ nav{
 }
 
 aside{
-    width: 15%;
-    padding: 5px;
-    float: right;
+    text-align: center;
 }
 
 
@@ -31,22 +29,6 @@ footer{
     background-color: #06bba0;
 }
 
-
-
-#logo{
-    border-radius: 50%;
-    width: 80px;
-}
-
-#btnBuscar{
-    background-color: #06bba0;
-    color: white;
-    padding: 3px 6px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 2px 2px 2px #0000005b;
-}
 .container{
     width: 60%;
     margin: 0 auto;  
@@ -67,5 +49,52 @@ footer{
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 2px 2px 2px #0000005b;
+}
+
+.btnSubmit{
+    background-color: #06bba0;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #0000005b;
+}
+
+.information{
+    width: 15%;
+    float: right;
+    display: block;
+}
+
+#logo{
+    border-radius: 50%;
+    width: 80px;
+}
+
+#btnBuscar{
+    background-color: #06bba0;
+    color: white;
+    padding: 3px 6px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #0000005b;
+}
+
+
+aside > h2{
+    color: #0080a4;
+}
+
+.footer{
+    width: 60%;
+    margin: 0 auto;
+    border-color: #06bba0;
+    background-color: #06bba0;
+    border-style: solid;
+
+    display: flex;
+    justify-content:space-evenly;
 }
 
