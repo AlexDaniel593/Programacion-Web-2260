@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/tablasBg.css">
+    <title>Tablas</title>
+</head>
+
+<body>
+    <header>
+
+        <h1>Tablas</h1>
+        <p>El uso de la etiqueta <em>table</em>, es para el envio y recepcion de datos</p>
+    </header>
+
+    <section>
+        <article>
+            <table frame="void" rules="rows" border="3px" cellpadding="10px" cellspacing="0px">
+                <caption align="bottom">Tabla de Personas</caption>
+                <colgroup>
+                    <col style="background-color: #6f66c465;">
+                    <col style="background-color: #4588fc85;">
+                    <col style="background-color: #6f66c465;">
+                    <col style="background-color: #4588fc85;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Direccion</th>
+                        <th>Telefono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td width="150px">Carlos</td>
+                        <td>Benavides</td>
+                        <td>Quito</td>
+                        <td>0987654321</td>
+                    </tr>
+                    <tr>
+                        <td>Andres</td>
+                        <td>Benavides</td>
+                        <td>Quito</td>
+                        <td>0987654321</td>
+                    </tr>
+                    <tr>
+                        <td>Daniel</td>
+                        <td>Guaman</td>
+                        <td>Quito</td>
+                        <td>0987654321</td>
+                    </tr>
+                    <tr>
+                        <td>Kevin</td>
+                        <td>Amaguana</td>
+                        <td>Sangolqui</td>
+                        <td>0987654321</td>
+                    </tr>
+                    <tr>
+                        <td>Javier</td>
+                        <td>Jaguaco</td>
+                        <td>Sangolqui</td>
+                        <td>0987654321</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td>sum</td>
+                    <td>sum</td>
+                    <td>sum</td>
+                    <td>9999999999</td>
+
+                </tfoot>
+            </table><br>
+        </article>
+
+        <article>
+            <table>
+                <colgroup>
+                    <col width="100px" style="background-color: #6f66c465;">
+                    <col width="100px" style="background-color: #4588fc85;">
+                    <col width="100px" style="background-color: #6f66c465;">
+                </colgroup>
+                <thead>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="4">1</td>
+                        <td>2</td>
+                        <td rowspan="4">3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article>
+            <br>
+            <form action="/submit" method="post">
+                <label>Nombre: </label>
+                <input type="text" maxlength="20" id="nombre" name="nombre" placeholder="nombre"><br>
+                <label>Apellido: </label>
+                <input id="apellido" type="text" id="apellido" name="apellido" placeholder="apellido"><br>
+                <label>Correo: </label>
+                <input type="email" id="email" name="email" placeholder="correo"><br>
+                <label>Contrasena: </label>
+                <input type="password" minlength="1" maxlength="5" id="password" name="password" placeholder="contrasena" required><br>
+                <laber>Tipo Persona:</laber>
+                <select name="tipo" id="tipo">
+                    <option value="estudiante">Estudiante</option>
+                    <option value="Docente">Docente</option>
+                    <option value="Administrativo">Administrativo</option>
+                </select><br>
+                <label>Comentario: </label>
+                <textarea placeholder="escribe aqui tu comentario"></textarea>
+                
+                <br>
+                <input type="submit" value="Enviar datos">
+            </form>
+
+        </article>
+    </section>
+</body>
+
+</html>

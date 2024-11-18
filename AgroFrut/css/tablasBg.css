@@ -1,0 +1,67 @@
+header {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(112,102,196,1) 50%, rgba(69,137,252,1) 100%);
+    color:white;
+}
+
+header h1 {
+    text-align: center;
+}
+
+caption {
+    color: white;
+    background-color: #343a40;
+}
+
+input[type="text"]{
+    background-color: transparent;
+    border:0px;
+    border-bottom: 2px;
+    border-top: 2px;
+    border-radius: 3px;
+    color: #1b558f;
+    outline: none;
+}
+
+
+input[type="password"]{
+    background-color: transparent;
+    border:0px;
+    border-bottom: 2px;
+    border-top: 2px;
+    border-radius: 3px;
+    color: #1b558f;
+    outline: none;
+}
+
+input[type="email"]{
+    background-color: transparent;
+    border:0px;
+    border-bottom: 2px;
+    border-top: 2px;
+    border-radius: 3px;
+    color: #1b558f;
+    outline: none;
+}
+
+
+::placeholder{
+    color: blue;
+    opacity: 0.5;
+}
+
+input[type="password"]::placeholder {
+    color: red;
+    opacity: 0.5;
+}
+
+#apellido::placeholder {
+    color: yellowgreen;
+}
+
+input[type="submit"]{
+    background-color: #1b558f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
