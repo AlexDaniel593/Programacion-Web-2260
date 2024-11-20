@@ -159,3 +159,27 @@ figure img {
 figure h3 {
     color: #3aab4b;
 }
+
+
+.table {
+    margin: 100px;
+}
+
+
+.table td{
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.599);
+}
+
+.table th {
+    background-color: #3aab4b;
+    color: white;
+    padding: 10px;
+ }
+
+ .table caption {  
+    font-size: 24px;
+    padding: 10px;
+    color: #3aab4b;
+ }
+
