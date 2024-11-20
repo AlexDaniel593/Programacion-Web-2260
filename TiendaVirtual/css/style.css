@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #3aab4b;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure the header is above other elements */
+}
+
+header h1 {
+    padding: 10px;
+}
+
+nav {
+    text-align: center;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+h3 {
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    margin-top: 86px; /* Adjust this value based on the height of your header */
+    text-align: center;
+    background: rgb(251,251,251);
+    background: linear-gradient(90deg, rgba(251,251,251,1) 0%, rgba(134,141,152,1) 100%, rgba(120,120,120,1) 100%, rgba(0,0,0,1) 100%);
+}
+
+.contenido {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+    float: right;
+    text-align:left ;
+}
+
+.categoria {
+    width: 15%;
+    height: 420vh;
+    float: left;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.803);
+    justify-content: center;
+}
+
+.footer {
+    background-color: #101510b2;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
+
+.btnComprar{
+    width: 80px;
+}
+
+.btnCategoria {
+    width: 180px;
+}
+
+.btnInventario {    
+    width: 250px;
+    padding: 10px;
+    margin: 20px;
+}
+
+button {
+    background-color: #3aab4b;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin: 4px;
+    padding: 5px;
+
+}
+
+#h-categorias {
+    color: white;
+    text-align: center;
+    padding: auto;
+}
+
+.servicio-cliente {
+    width: 20%;
+    height: 350px;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 20px;
+}
+
+.servicio-cliente button {
+    width: 90%;
+}
+
+.servicio-cliente img {
+    margin: 20px;
+}
+
+.servicio-cliente textarea {
+    width: 90%;
+    height: 80px;
+    margin: 10px;
+    resize: none;
+}
+
+.servicio-cliente textarea::placeholder {
+    text-align: center;
+}
+
+.sc-title {
+    background-color: #3aab4b;
+    border-radius: 10px;
+}
+
+.sc-title p {
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+
+figure {
+    background-color: white;
+    width: 400px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+figure img {
+    width: 200px;
+}
+
+figure h3 {
+    color: #3aab4b;
+}

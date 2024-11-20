@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+.login-box form input[type="text"],
+.login-box form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 1px solid #333;
+}
+
+#btnLogin {
+    width: 90%;
+    padding: 8px;
+    margin: 10px;
+    border: none;
+    background: rgb(87,74,149);
+    background: linear-gradient(90deg, rgba(87,74,149,1) 0%, rgba(103,135,186,1) 100%, rgba(120,120,120,1) 100%, rgba(0,0,0,1) 100%);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#img-login {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.forgot {
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;    
+}
+
+.forgot label {
+    color: #333;
+    font-size: 14px;
+    padding-left: 10px;
+}
