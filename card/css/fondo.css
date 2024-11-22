@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}   
+
+body{ 
+    background-color: #cccccc;
+
+}
+
+header{
+    background-color: blueviolet;
+}
+
+.section1{
+    height: 400px;
+    background-color: #000;
+    background-image: url(../img/angular.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.section2{
+    background: url(https://placehold.jp/3d4070/ffffff/1000x1000.png) ;
+    height: 400px;
+
+}
+
+.section3{
+    height: 500px;
+    background-image: url(../img/angular-fondo.jpeg) ;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.section4{
+    height: 500px;
+}
