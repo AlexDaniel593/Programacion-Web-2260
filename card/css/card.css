@@ -27,13 +27,13 @@ body{
     border-radius: 10px 10px 0px 0px;
 }
 
-.card-header h2 {
+.card-title {
     position: absolute;
     color: transparent;
     z-index: 1;
 }
 
-.card-header h2:hover {
+.card-title:hover {
     position: absolute;
     color: white;
     border: 2px solid white;
@@ -42,11 +42,17 @@ body{
     transition: 0.3s;
 }
 
-.card-header h2:hover ~ .card-img {
+.card-title:hover ~ .card-img {
     filter: brightness(0.5);
     transform: translateX(10px);
 }
 
+
+body:has(.card-title:hover){
+    background-color: black;
+    transition: background-color 0.6s ease;
+
+}
 
 .card-img {
     height: 250px;
