@@ -4,7 +4,7 @@
 
 body{ 
     height: 100%;
-    background-color: #71add0;
+    background-color: #ddd;
 }
 
 .card{
@@ -17,10 +17,42 @@ body{
     border-radius: 10px;
 }
 
-.card-header{
+.card-header {
     height: 250px;
-    background-image: url(../img/imagen.png);
+    background-image: url(../img/300x250.png);
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
 }
+
+.card-header h2 {
+    position: absolute;
+    color: transparent;
+    z-index: 1;
+}
+
+.card-header h2:hover {
+    position: absolute;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-header h2:hover ~ .card-img {
+    filter: brightness(0.5);
+    transform: translateX(10px);
+}
+
+
+.card-img {
+    height: 250px;
+    transition: transform 0.5s ease, filter 0.5s ease; /* Transiciones para el efecto */
+}
+
 
 h4{
     color:gray;
@@ -28,6 +60,17 @@ h4{
 
 .card-content{
     padding: 20px;
+}
+
+.card-content-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price{
+    color: #4977db;
+    font-weight: bold;
+    padding: 5px 10px 0px 0px;
 }
 
 .size{
@@ -39,38 +82,43 @@ h4{
     margin-bottom: 5px;
 }
 
-.red{
+.red {
     border: 1px solid red;
     background-color: red;
-    color: red;
-    border-radius: 20%;
+    color: transparent;
+    border-radius: 50%;
     width: 10px;
     height: 10px;
+    display: inline-block;
 }
+
 
 .green{
     border: 1px solid green;
     background-color: green;
-    color: green;
+    color: transparent;
     border-radius: 100%;
     width: 10px;
     height: 10px;
+    display: inline-block;
 }
 
 .blue{
     border: 1px solid blue;
     background-color: blue;
-    color: blue;
+    color: transparent;
     border-radius: 100%;
     width: 10px;
     height: 10px;
+    display: inline-block;
 }
 
 .white{
     border: 1px solid white;
     background-color: white;
-    color: white;
-    border-radius: 20%;
+    color: transparent;
+    border-radius: 50%;
     width: 10px;
     height: 10px;
+    display: inline-block;
 }
