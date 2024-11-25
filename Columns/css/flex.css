@@ -1,0 +1,45 @@
+* {
+    margin: 0;  
+}
+
+body {
+    height: 100%;
+    background-color: blanchedalmond;
+}
+
+.container {
+    display: flex;
+    border: 1px solid blue;
+    height: 500px;
+    width: 40%;
+}
+
+.container div {
+    height: 50px;
+}
+
+.item1 {
+    flex: 0 0 100px; /*mantien el valor de 100px*/
+    background-color: red;
+}
+
+/* Detalles de los valores de flex
+    flex-grow: 1; => Cuanto crece el elemento respecto al espacio disponible
+    flex-shrink: 1; => Cuanto se encoge el elemento respecto al espacio disponible
+    flex-basis: 100px; => Tamaño base del elemento
+*/
+
+.item2 {
+    flex: 2 2 200px;
+    background-color: green;
+}
+
+.item3 {
+    flex: 1 1 100px;
+    background-color: chocolate;
+}
+
+.item4 {
+    flex: 1 1 100px;
+    background-color: yellow;
+}
