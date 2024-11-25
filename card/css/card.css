@@ -54,9 +54,13 @@ body:has(.card-title:hover){
 
 }
 
+.card:has(.card-title:hover){
+    box-shadow: #ffffffc1 0px 0px 50px;
+}
+
 .card-img {
     height: 250px;
-    transition: transform 0.5s ease, filter 0.5s ease; /* Transiciones para el efecto */
+    transition: transform 0.5s; /* Transiciones para el efecto */
 }
 
 
