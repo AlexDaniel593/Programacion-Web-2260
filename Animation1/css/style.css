@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #b7ecf3;
+    height: 100%;
+}
+
+@keyframes cambiocolores{
+    0%{
+        background-color: #b56612;
+    }
+
+    25%{
+        background-color: #29af17;
+        transform: scale(0.5);
+        border-radius: 25%;
+    }
+
+    50%{
+        background-color: #265088;
+        transform: scale(5.1);
+        border-radius: 50%;
+    }
+
+    75%{
+        background-color: #29af17;
+        transform: scale(0.5);
+        border-radius: 75%;
+    }
+
+    100%{
+        background-color: #b56612;
+        border-radius: 100%;
+    }
+} 
+   
+.circulo{
+    background-color: #b56612;
+    width: 100px;
+    height: 100px;
+
+    /* animation-name: cambiocolores, volar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; */
+
+    animation: cambiocolores 5s infinite, volar 5s infinite;
+}
+
+@keyframes volar {
+    0%{}
+
+    20%{
+        transform: translate(100px, 0px) rotate(90deg);
+    }
+
+    30%{
+        transform: translate(300px, 50px) rotate(180deg);
+    }
+
+    40%{
+        transform: translate(500px, 100px) rotate(90deg);
+    }
+
+    50%{
+        transform: translate(600px, 200px) rotate(180deg);
+    }
+
+    100%{};   
+}

@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #cce2e4;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game{
+    position: relative;
+    height: 150px;
+    width: 200px;
+    background-color: black;
+}
+ 
+   
+.pelota{
+    background-color: #ac1919;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: pelota 2s infinite linear;
+
+
+    /* animation-name: pelota;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+    
+}
+
+.barra{
+    background-color: #1999ac;
+    width: 100px;
+    height: 20px;
+    animation: barra 2s infinite linear;
+}
+
+@keyframes pelota {
+
+    0%{
+        transform: translate(0px, 0px);
+    }
+
+    50%{
+        transform: translate(90px, 100px);
+    }
+
+    100%{
+        transform: translate(170px, 0px);
+    } 
+}
+
+@keyframes barra{
+    0%{
+        transform: translate(0px, 100px);
+    }
+
+    25%{
+        transform: translate(50px, 100px);
+    }  
+
+    50%{
+        transform: translate(100px, 100px);
+    }
+
+    75%{
+        transform: translate(50px, 100px);
+    }
+
+    100%{
+        transform: translate(0px, 100px);
+    }
+}
+
+
