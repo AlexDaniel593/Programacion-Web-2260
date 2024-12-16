@@ -1,0 +1,38 @@
+*   {
+    margin: 0;
+}
+
+.container {
+    width: 100%;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.ghost {
+    font-size: 80px;
+    animation: swing 1s infinite;
+}
+
+@media (max-width: 768px) {
+    .container {
+        background-color: lightcoral;
+    }
+
+    .ghost {
+        font-size: 40px;
+        animation: bounce 1s infinite;
+    }
+}
+
+@media (max-width: 400px) {
+    .container{
+        background-color: lightgreen;
+    }
+
+    .ghost {
+        font-size: 20px;
+        animation: shakeX 1s infinite;
+    }
+}
