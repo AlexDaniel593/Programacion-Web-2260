@@ -13,7 +13,6 @@ let estudiantes = [
 
 
 
-function imprimirEstudiantes(estudiantes) {
     for (let i = 0; i < estudiantes.length; i++) {
         console.log('*************');
         console.log('Nombre: ' + estudiantes[i][0]);
@@ -37,5 +36,5 @@ function imprimirEstudiantes(estudiantes) {
         console.log('*************');
         console.warn('');
     }
-}
+
 
