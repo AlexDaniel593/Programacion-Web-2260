@@ -12,19 +12,6 @@ let estudiantes = [
 ]
 
 
-for (let i = 0; i < estudiantes.length; i++) {
-    if (estudiantes[i][2] >= 16) {
-        estudiantes[i][3] = 'Excelente';
-    } else if (estudiantes[i][2] >= 12 && estudiantes[i][2] < 16) {
-        estudiantes[i][3] = 'Bueno';
-    } else if (estudiantes[i][2] >= 8 && estudiantes[i][2] < 12) {
-        estudiantes[i][3] = 'Aprobado';
-    } else if (estudiantes[i][2] < 8) {
-        estudiantes[i][3] = 'Reprobado';
-    }
-}
-
-
 
 function imprimirEstudiantes(estudiantes) {
     for (let i = 0; i < estudiantes.length; i++) {
