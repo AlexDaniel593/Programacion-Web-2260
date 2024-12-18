@@ -32,7 +32,7 @@ let estudiantes = [
             estado = 'Reprobado';
         }
 
-        console.log('Estado: ' + promedio);
+        console.log('Estado: ' + estado);
         console.log('*************');
         console.warn('');
     }
