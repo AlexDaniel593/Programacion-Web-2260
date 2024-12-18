@@ -52,8 +52,3 @@ function imprimirEstudiantes(estudiantes) {
     }
 }
 
-let peorPromedio = estudiantes.reduce((peor, estudiante) => estudiante[2] < peor ? estudiante[2] : peor, estudiantes[0][2]);
-console.log('El peor promedio es: ' + peorPromedio);
-
-let mejorPromedio = estudiantes.reduce((mejor, estudiante) => estudiante[2] > mejor ? estudiante[2] : mejor, estudiantes[0][2]);
-console.log('El mejor promedio es: ' + mejorPromedio);
