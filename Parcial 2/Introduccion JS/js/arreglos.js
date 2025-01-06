@@ -54,3 +54,51 @@ console.log({maximo});
 // Ventajas
 // Son ideales para trabajar con transformaciones y manipulaciones complejas de datos dentro de un arreglo
 // permite un estilo de programacion funcional mas limpio y facil de leer
+
+// Agregar elementos dentro de un array
+// psuh() agrega un elemento al final del arreglo
+let p = [1, 2, 3, 4];
+p.push(5);
+console.log(p);
+
+//unshift() agrega un elemento al inicio del arreglo
+p.unshift(0);
+console.log(p);
+
+//splice() agrega un elemento en la posicion que se le indique
+p.splice(2, 0, 1.5); //agrega el 1.5 en la posicion 2 sin eliminar ningun elemento
+console.log(p);
+
+
+// modificar elementos dentro de un array
+// podemos acceder a un elemento directamente por su indice y modificarlo
+let i = ['Ana', 'Juan', 'Pedro', 'Jose'];
+i[1] = 'Maria';
+console.log(i); 
+
+// si deseamos modificar el arreglo de forma inmutable, podemos usar map() para crear un nuevo arreglo con los cambios
+// let arregloMap = ['Azul', 'Amarrillo', 'Rojo', 'Negro'];
+let arregloMap = [10, 23, 35, 26]
+let nuevoArreglo = arregloMap.map( num => num === 10 ? 5 : num)
+console.log(nuevoArreglo)
+
+// splice() tambien se puede utulizar
+let z = [1, 2, 3];
+z.splice(1, 1, 5);
+console.log(z);
+
+//Eliminar elementos 
+//pop() elimina el ultimo elemento del arreglo
+let arregloE = ['Azul', 'Amarrillo', 'Rojo', 'Negro'];
+arregloE.pop()
+console.log(arregloE)
+
+// shift() elimina el primer elemento de un arreglo
+let arregloS = ['Azul', 'Amarrillo', 'Rojo', 'Negro'];
+arregloS.shift()
+console.log(arregloS)
+
+//splice() para eliminar cualquier elemento 
+let arregloSP = ['Azul', 'Amarrillo', 'Rojo', 'Negro'];
+arregloSP.splice(1, 1)
+console.log(arregloSP)
