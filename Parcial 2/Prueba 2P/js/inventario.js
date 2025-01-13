@@ -36,6 +36,7 @@ class Inventario {
 class Ventas {
 
     #ventas = []; // Encapsulamiento debido a que el atributo ventas no debe ser modificado directamente
+    // debido a que es informacion sensible y no debe ser alterada por otras clases, porque podria afectar el calculo de los ingresos
     constructor() {
         this.ventas = [];
     }
@@ -67,7 +68,7 @@ class Ventas {
     }
 
     totalIngresos() {
-        totalIngresos = 0;
+        let totalIngresos = 0;
         for (let i in ventas.ventas) {
             totalIngresos += ventas.ventas[i].precio * ventas.ventas[i].cantidad;
             // como almacenamos el precio en el momento de la venta, se multiplica por la cantidad vendida
@@ -95,16 +96,19 @@ class Ventas {
 }
 
 
-class Descuentos {
+class Descuentos extends Inventario {
+    // heredamos de la clase Inventario para poder acceder a la propiedad productos
     constructor(inventario) {
+        super();
         this.inventario = inventario;
     }
-
     aplicarDescuento(categoria, porcentaje) {
-        let productos = this.inventario.filtrarPorCategoria(categoria); // con el uso de this.inventario se accede a la propiedad inventario
+        let productos = this.inventario.filtrarPorCategoria(categoria); 
+        // con el uso de this.filtrarPorCategoria accedemos a la funcion de la clase padre
 
         for (let i in productos) {
             productos[i].precio = productos[i].precio - (productos[i].precio * porcentaje / 100);
+            // con el uso de this.productos accedemos a la propiedad productos de la clase padre
         }
     }
 }
