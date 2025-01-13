@@ -134,6 +134,8 @@ inventario.agregarProducto(producto6);
 
 ventas.realizarVenta('Samsung A35', 3);
 ventas.realizarVenta('Samsung A55', 1);
+ventas.realizarVenta('Samsung J1', 1); // Producto inexistente
+ventas.realizarVenta('MSI G66', 100); // Cantidad insuficiente
 ventas.realizarVenta('MSI G66', 2);
 descuentos.aplicarDescuento('Smartphone', 10);
 ventas.realizarVenta('Samsung A35', 1);
