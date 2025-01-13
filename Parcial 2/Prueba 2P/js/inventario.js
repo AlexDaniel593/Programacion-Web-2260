@@ -24,6 +24,8 @@ class Inventario {
 
     precioDescendente() {
         let productosOrdenados = this.productos.sort((a, b) => b.precio - a.precio);
+
+        return productosOrdenados;
     }
 
     filtrarPorCategoria(categoria) {
@@ -132,6 +134,21 @@ inventario.agregarProducto(producto4);
 inventario.agregarProducto(producto5);
 inventario.agregarProducto(producto6);
 
+
+// Ordenar productos por precio ascendente
+console.log('----------------------------------');
+console.log('Productos ordenados por precio ascendente');
+console.log('----------------------------------');
+console.log(inventario.precioAscendente());
+
+// Ordenar productos por precio descendente
+console.log('----------------------------------');
+console.log('Productos ordenados por precio descendente');
+console.log('----------------------------------');
+console.log(inventario.precioDescendente());
+
+// Venta de productos
+
 ventas.realizarVenta('Samsung A35', 3);
 ventas.realizarVenta('Samsung A55', 1);
 ventas.realizarVenta('Samsung J1', 1); // Producto inexistente
@@ -139,6 +156,8 @@ ventas.realizarVenta('MSI G66', 100); // Cantidad insuficiente
 ventas.realizarVenta('MSI G66', 2);
 descuentos.aplicarDescuento('Smartphone', 10);
 ventas.realizarVenta('Samsung A35', 1);
+
+
 
 
 // Informe detallado
