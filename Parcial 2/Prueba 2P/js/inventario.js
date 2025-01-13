@@ -134,10 +134,8 @@ ventas.realizarVenta('MSI G66', 2);
 descuentos.aplicarDescuento('Smartphone', 10);
 ventas.realizarVenta('Samsung A35', 1);
 
-// Imprimir un reporte detallado que incluya:
-// ▪ Inventario actualizado.
-// ▪ Ventas realizadas con fecha y hora (utilizando objetos Date).
-// ▪ El total de ingresos generados y el producto más vendido.
+
+// Informe detallado
 console.log('----------------------------------');
 console.log('               Reporte detallado');
 console.log('----------------------------------');
