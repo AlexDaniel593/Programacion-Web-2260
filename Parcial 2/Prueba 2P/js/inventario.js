@@ -17,14 +17,14 @@ class Inventario {
     }
 
     precioAscendente() {
-        let productosOrdenados = this.productos.sort((a, b) => a.precio - b.precio);
-
+        let productosOrdenados = this.productos.map(producto => producto).sort((a, b) => a.precio - b.precio);
+        // realizamos una copia del array de productos para no modificar el array original
         return productosOrdenados;
     }
 
     precioDescendente() {
-        let productosOrdenados = this.productos.sort((a, b) => b.precio - a.precio);
-
+        let productosOrdenados = this.productos.map(producto => producto).sort((a, b) => b.precio - a.precio);
+        // realizamos una copia del array de productos para no modificar el array original
         return productosOrdenados;
     }
 
