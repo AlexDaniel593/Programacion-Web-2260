@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de eventos con DOM en JS</title>
+</head>
+<body>
+    <!-- <h1 id="titulo" onclick="this.innerHTML = 'Nuevo Texto Ingresado' "> Evento onclick</h1> -->
+    <!-- no es muy recomendable usar el evento onclick en el html -->
+
+    <h1 id="titulo"> Eventos en JavaScript</h1>
+    <!-- <button type="button" id="btnMostrar" onclick="mostrar(document.getElementById('titulo'))">Mostrar</button>    -->
+
+    <!-- <div id="mostrar"> -->
+    <!-- <br>
+    <br>
+    nombre: <input type="text" name="nombre" id="nombre" onchange="convertir(this)">
+
+    <br>-->
+
+    <!-- <h1 id="titulo" onmouseover="rojo(this)" onmouseout="azul(this)"> Eventos</h1>
+    <h1 id="titulo" onmousedown="rojo(this)" onmouseup="azul(this)"> Eventos</h1> -->
+<!-- 
+    Nombre: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)"><br>
+    Apellido: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)"> -->
+
+
+    <form action="" method="get" id="formulario">
+        Nombre: <input type="text"id="nombre"><br>
+        Apellido: <input type="text"id="apellido"><br>
+    </form>
+
+
+
+    
+    
+
+
+    <script>
+        function mostrar(){
+            let titulo = document.getElementById('titulo'); //obtengo el elemento por su id
+            titulo.innerHTML = 'Nuevo Texto Ingresado';
+        }
+
+        document.getElementById('titulo').onclick = cambiarTexto; // solo se hace referencia
+        // estamos haciendo una referencia a la funcion cambiarTexto, no estmoa llamanado a la funcion
+        // funcion tipo callback
+
+        function cambiarTexto(){
+            document.getElementById('titulo').innerHTML = 'Nuevo Texto Ingresado';
+        }
+
+        function mostrar(titulo){
+            console.log(titulo);
+            titulo.innerHTML = 'Nuevo Texto Ingresado';
+        }
+
+        function entrar(){
+            alert('Entrando a la pagina web');
+
+            //cookies
+            // son pequeños archivos que se almacenan en el navegador
+
+
+            // Verificar que las cookies estan habilitadas en el navegador
+
+            let texto =''
+            if(navigator.cookieEnabled){
+                texto = 'Las cookies estan habilitadas';
+            }else{
+                texto = 'Las cookies no estan habilitadas';
+            }
+
+            document.getElementById('mostrar').innerHTML = texto;
+        }
+
+        function convertir(input){
+            input.value = input.value.toUpperCase();
+        } 
+
+        function rojo(titulo){
+            titulo.style.color = 'red';
+        }
+
+        function azul(titulo){
+            titulo.style.color = 'blue';
+        }
+
+        // function cambiar(input){
+        //     input.style.backgroundColor = 'yellow';
+        // }
+
+        // function regresar(input){
+        //     input.style.backgroundColor = 'white';
+        // }
+
+
+        document.getElementById('nombre').addEventListener('focus',(evento) => {
+            evento.target.style.backgroundColor = 'yellow';
+        });    //funcion callback
+        document.getElementById('nombre').addEventListener('blur', (evento) => {
+            evento.target.style.backgroundColor = '';
+        });
+        document.getElementById('apellido').addEventListener('focus', (evento) => {
+            evento.target.style.backgroundColor = 'yellow';
+        });
+        document.getElementById('apellido').addEventListener('blur', (evento) => {
+            evento.target.style.backgroundColor = '';
+        });
+
+
+        
+
+
+        
+        function cambiar(evento){
+            let component = evento.target;
+            component.style.backgroundColor = 'yellow';
+        }
+
+        function regresar(input){
+            let component = input.target;
+            component.style.backgroundColor = 'white';
+        }
+
+
+        //Formulario
+        let formulario = document.getElementById('formulario');
+        formulario.addEventListener('focus', (evento) => {
+            evento.target.style.backgroundColor = 'yellow';
+        }, true); 
+
+        formulario.addEventListener('blur', (evento) => {
+            evento.target.style.backgroundColor = '';
+        }, true);
+
+    </script>
+
+
+    
+</body>
+</html>

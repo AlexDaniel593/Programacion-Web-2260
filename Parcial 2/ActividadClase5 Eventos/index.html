@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="mostrarOcultar">Mostrar Panel</button>
+
+    <div id="panel_de_configuracion" style="display: none;">
+        <h1 id="titulo_configuracion">Panel de configuracion</h1><br><br>
+        Nuevo Titulo: <input type="text" id="nuevo_titulo"><br><br>
+        <p>Seleccione el color de fondo</p>
+        <select id="color_fondo">
+            <option value="white">Claro</option>
+            <option value="black">Oscuro</option>
+            <option value="blue">Azul</option>
+        </select>
+    </div>
+
+
+    <script>
+        document.getElementById('mostrarOcultar').addEventListener('click', () => {
+            const panel = document.getElementById('panel_de_configuracion');
+            if (panel.style.display === 'none') {
+                panel.style.display = 'block';
+                mostrarOcultar.innerHTML = 'Ocultar Panel';
+            } else {
+                panel.style.display = 'none';
+                mostrarOcultar.innerHTML = 'Mostrar Panel';
+            }
+        });
+
+        document.getElementById('color_fondo').addEventListener('change', () => {
+            const color = document.getElementById('color_fondo').value;
+            if(color === 'white'){
+                document.body.style.backgroundColor = 'white';
+            } else if(color === 'black'){
+                document.body.style.backgroundColor = 'black';
+                document.body.style.color = 'white';
+            } else if(color === 'blue'){
+                document.body.style.backgroundColor = 'blue';
+                document.body.style.color = 'white';
+            }
+        });
+
+        document.getElementById('nuevo_titulo').addEventListener('change', () => {
+            const nuevoTitulo = document.getElementById('nuevo_titulo').value;
+            document.getElementById('titulo_configuracion').innerHTML = nuevoTitulo;
+        });
+    </script>
+</body>
+</html>
