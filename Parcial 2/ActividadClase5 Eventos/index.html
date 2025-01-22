@@ -9,14 +9,23 @@
     <button id="mostrarOcultar">Mostrar Panel</button>
 
     <div id="panel_de_configuracion" style="display: none;">
-        <h1 id="titulo_configuracion">Panel de configuracion</h1><br><br>
-        Nuevo Titulo: <input type="text" id="nuevo_titulo"><br><br>
+        <h1 id="titulo_configuracion">Panel de configuracion</h1>
+        Nuevo Titulo: <input type="text" id="nuevo_titulo"><br>
         <p>Seleccione el color de fondo</p>
         <select id="color_fondo">
             <option value="white">Claro</option>
             <option value="black">Oscuro</option>
             <option value="blue">Azul</option>
-        </select>
+        </select><br>
+        Activar Comentarios
+        <input type="checkbox" id="activar_comentarios">
+        <textarea name="comentarios" id="comentarios" style="display: none;"></textarea><br>
+
+        Lista:
+        <input type="text" id="nueva_opcion">
+        <ul id="lista">
+
+        </ul>
     </div>
 
 
@@ -45,10 +54,23 @@
             }
         });
 
-        document.getElementById('nuevo_titulo').addEventListener('change', () => {
+        document.getElementById('nuevo_titulo').addEventListener('input', () => {
             const nuevoTitulo = document.getElementById('nuevo_titulo').value;
             document.getElementById('titulo_configuracion').innerHTML = nuevoTitulo;
         });
+
+        document.getElementById('activar_comentarios').addEventListener('change', () => {
+            const comentarios = document.getElementById('comentarios');
+            if(comentarios.style.display === 'none'){
+                comentarios.style.display = 'block';
+
+            } else {
+                comentarios.style.display = 'none';
+            }
+        });
+
+
+        
     </script>
 </body>
 </html>
