@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de DOM en JS</title>
+</head>
+<body>
+    <form id = "formulario">
+        Nombre: <input type = "text" name = "nombre" value = "Juan">
+        <br>
+        Apellido: <input type = "text" name = "apellido" value = "Perez">
+        <br>
+        correo: <input type = "text" name = "correo" value = "JuanPerez">
+    </form>
+    <button id = "btnMostrar" onclick = "mostrarDatos()" type="submit">Mostrar Valor</button>
+    <br><br>
+    <div id="valores">
+
+    </div>
+    <br>
+    <script>
+        //implementar un evento dom
+        //obtener los datos a partir de una funcion
+        function mostrarDatos(){
+            let formulario = document.forms['formulario'];
+            let text = '';      
+            for (const elementos of formulario) {
+                text += elementos.value + '<br>';
+            } 
+            //puedo ingresar a los valores asi
+            //document.getElementById('valores').innerHTML = text;
+            //o tambien de forma indivual
+            let nombre = formulario['nombre'];
+            let apellido = formulario['apellido'];
+            let correo = formulario['correo'];
+            text = nombre.value + '<br>' + apellido.value + '<br>' + correo.value + '@gmail.com';
+            document.getElementById('valores').innerHTML = text;
+
+        }
+    </script>
+</body>
+</html>

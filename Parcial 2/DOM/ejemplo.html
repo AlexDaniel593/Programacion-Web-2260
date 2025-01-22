@@ -1,0 +1,84 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de imagenes</title>
+</head>
+<body>
+    <h1>Generador de imagenes random</h1> <br>
+    <button id = "btnMostrar" onclick = "mostrarDatos()" type="submit" >Imagenes random</button>
+    <div id="mostarRandImg">
+        <img src="images/jg.jpeg" alt="image" class="imagen">
+        <img src="images/jg2.jpeg" alt="image" class = "imagen">
+        <img src="images/jg3.jpeg" alt="image" class="imagen">
+        <img src="images/sp.jpeg" alt="image" class = "imagen">    
+    </div>
+    <script>
+        // setInterval(function mostrarDatos(){
+        //     document.querySelectorAll('.imagen');
+            
+        // },1000);
+        let i = 0;
+        function mostrarDatos() {
+            const rutas = [
+                "images/jg.jpeg",
+                "images/jg2.jpeg",
+                "images/jg3.jpeg",
+                "images/sp.jpeg"
+            ];
+            if (i >= rutas.length) {
+                i = 0;
+            }
+            const contenedor = document.getElementById("mostrarRandImg");
+            contenedor.innerHTML = `<img src=" ${rutas[i]}" alt="Imagen Random" style="max-width: 100%; height: auto;">`;
+            i++;
+        }setInterval(mostrarDatos, 1000);
+
+        // Cambia la imagen automáticamente cada segundo
+        
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Imágenes</title>
+</head>
+<body>
+    <h1>Generador de Imágenes Random</h1><br>
+    <button id="btnMostrar" onclick="mostrarDatos()" type="button">Imagenes Random</button>
+    <div id="mostrarRandImg" style="margin-top: 20px;">
+        <!-- Aquí se mostrará la imagen seleccionada -->
+    </div>
+    <script>
+        let i = 0;
+        function mostrarDatos() {
+            const rutas = [
+                "img/angular.png",
+                "img/speddyjorge.png",
+                "img/speed.png"
+            ]; // Agregué el punto y coma
+
+            // Reinicia el índice si llega al final del array
+            if (i >= rutas.length) {
+                i = 0;
+            }
+
+            // Selecciona el contenedor por su ID
+            const contenedor = document.getElementById("mostrarRandImg");
+
+            // Actualiza el contenido del contenedor con una nueva imagen
+            contenedor.innerHTML = `<img src="${rutas[i]}" alt="Imagen Random" style="max-width: 100%; height: auto;">`;
+
+            i++; // Incrementa el índice para la próxima imagen
+        }
+
+        // Cambia la imagen automáticamente cada segundo
+        setInterval(mostrarDatos, 4000);
+    </script>
+</body>
+</html>
