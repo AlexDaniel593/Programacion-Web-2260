@@ -1,0 +1,39 @@
+﻿@{
+	ViewData["Title"] = "Sucursal";
+}
+
+
+
+@* <div class="input-group"> *@
+@* <input id="txtNombreSucursal" onkeyup="filtrarSucursal()" type="text" class="form-control" placeholder="Ingresar sucursal a buscar"> *@
+@* <button class="btn btn-outline-secondary" type="button" onclick="Buscar()">Buscar</button>  *@
+@* <button class="btn btn-outline-secondary" type="button" onclick="Limpiar()">Limpiar</button> *@
+@* </div> *@
+
+
+
+<fieldset class="border p-3">
+    <legend class="h5">Buscar Sucursal</legend>
+    <form id="frmBusqueda" method="post" class="row g-3">
+        <div class="col-md-4">
+            <label for="inputIdLab" class="form-label">Nombre</label>
+            <input type="text" class="form-control" name="nombre" id="inputIdLab">
+        </div>
+        <div class="col-md-4">
+            <label for="inputNombre" class="form-label">Direccion</label>
+            <input type="text" class="form-control" name="direccion" id="inputNombre">
+        </div>
+        <div class="col-12">
+            <button type="button" class="btn btn-danger" onclick="buscarSucursal()">Buscar</button>
+            <button type="button" class="btn btn-primary" onclick="limpiarSucursal()">Limpiar</button>
+        </div>
+    </form>
+</fieldset>
+
+
+<h1>Sucursales</h1>
+
+<div id="divContenedorTabla"></div>
+
+<script src="~/js/generic.js"></script>
+<script src="~/js/sucursal.js"></script>
